@@ -1,0 +1,312 @@
+#sidebar-wrapper {
+    background: black;
+}
+
+#sidebar-wrapper .sidebar-logo img {
+    width: 100%;
+}
+
+#sidebar-wrapper .list-menu {
+    margin-top: 0px;
+    color: #fff;
+}
+
+#sidebar-wrapper .list-menu p {
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 13px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+
+/* #sidebar-wrapper .list-menu .p-dash {
+    background-color: #15808F;
+} */
+
+#sidebar-wrapper .list-menu p:hover {
+    background-color: grey
+}
+
+#sidebar-wrapper .list-menu p .icon-img {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+#sidebar-wrapper .list-menu p .arrow {
+    width: 20px;
+    height: 20px;
+}
+
+#sidebar-wrapper .list-menu p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#sidebar-wrapper .list-menu p .dropdown-btn {
+    padding: 10px 0px;
+    text-decoration: none;
+    font-size: 13px;
+    color: #fff;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.active {
+    background-color: gray;
+    color: white;
+}
+
+.dropdown-container {
+    display: none;
+}
+
+.dropdown-container a {
+    width: 100%;
+    margin-left: 60px;
+    display: block;
+    padding: 5px 0px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+#page-content-wrapper {
+    background-color: #EAEAEA;
+}
+
+#page-content-wrapper .navbar .navbar-toggler-icon {
+    outline: none;
+    border: none;
+    margin-right: -17px;
+    border-color: red;
+    color: purple;
+    background-color: orange;
+}
+
+#page-content-wrapper .navbar input[type="text"] {
+    width: 100%;
+    background: black;
+    border: none;
+    border-radius: 4px;
+    margin: 0px 0;
+    margin-left: 5px;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+#page-content-wrapper .navbar .inputWithIcon input[type="text"] {
+    padding-left: 40px;
+}
+
+#page-content-wrapper .navbar .inputWithIcon {
+    position: relative;
+}
+#page-content-wrapper .navbar {
+    background-color: black;
+    color: white;
+}
+
+#page-content-wrapper .navbar .inputWithIcon img {
+    position: absolute;
+    margin-left: 10px;
+    left: 0;
+    top: 4px;
+    padding: 9px 8px;
+    color: #000;
+    transition: 0.3s;
+}
+
+#page-content-wrapper .navbar .navbar-nav li p img {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 7px;
+    border-radius: 50%;
+}
+
+#page-content-wrapper .navbar .navbar-nav li p span {
+    position: relative;
+    top: 6px;
+    font-size: 14px;
+    color: #2C633F;
+}
+
+
+/* dashboard styling */
+
+#page-content-wrapper .wrapper {
+    padding: 0px 29px 5px 30px;
+}
+
+#page-content-wrapper .wrapper .card {
+    padding: 30px 0px;
+    margin-top: 30px;
+    margin-right: 0px !important;
+}
+
+#page-content-wrapper .wrapper .card-hi {
+    height: 110px;
+}
+#page-content-wrapper .wrapper .cardz {
+    height: 140px;
+}
+
+#page-content-wrapper .wrapper .card .card-icon img {
+    width: 15%;
+    position: relative;
+    left: 10px;
+}
+
+#page-content-wrapper .wrapper .card .card-text {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: #fff;
+    text-align: right !important;
+}
+
+#page-content-wrapper .wrapper .card .card-text h1 {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+#page-content-wrapper .wrapper .card .card-text p {
+    font-size: 16px;
+    margin-top: -5px;
+}
+
+#page-content-wrapper .wrapper .student-card {
+    border: none;
+    background-color: lightskyblue;
+}
+
+#page-content-wrapper .wrapper .income-card {
+    border: none;
+    background-color: lightskyblue;
+    color: white;
+}
+
+#page-content-wrapper .wrapper .staffs-card {
+    border: none;
+    background-color: lightskyblue;
+    color: white;
+}
+
+#page-content-wrapper .wrapper .exp-card {
+    border: none;
+    background-color: lightskyblue;
+    color: white;
+}
+
+#page-content-wrapper .wrapper .dash-card {
+    border: none;
+    color: #656565;
+    background: linear-gradient(90deg, #ffffff, #ffffff 100%);
+}
+
+
+/* 2nd row */
+
+#page-content-wrapper .wrapper .second-row .card {
+    border: none;
+    padding: 25px 10px;
+}
+
+#page-content-wrapper .wrapper .second-row .notice .head h1 {
+    color: #000000;
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+#page-content-wrapper .wrapper .second-row .notice .body {
+    height: 248px;
+}
+
+#page-content-wrapper .wrapper .second-row .notice .body p {
+    margin: 3px 0px;
+}
+
+#page-content-wrapper .wrapper .second-row .notice .body .date {
+    font-size: 10px;
+    color: #656565;
+}
+
+#page-content-wrapper .wrapper .second-row .notice .body .title {
+    color: #0593D4;
+    font-size: 14px;
+}
+
+#page-content-wrapper .wrapper .second-row .notice .body .info {
+    font-size: 11px;
+    color: #656565;
+}
+
+#page-content-wrapper .wrapper .second-row .progress-ball {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#page-content-wrapper .wrapper .second-row .progress-ball h2 {
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+
+/* 3rd row */
+
+#page-content-wrapper .wrapper .social {
+    margin-top: 30px;
+    padding: 0px 20px;
+}
+
+#page-content-wrapper .wrapper .social a {
+    text-decoration: none;
+}
+
+#page-content-wrapper .wrapper .social a p {
+    font-size: 15px;
+    padding: 15px 0px;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 40px;
+}
+#page-content-wrapper .wrapper .form-control {
+    width: 90%;
+}
+.checkinput {
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.8rem;
+}
+.form-control{
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: none;
+}
+.registerhere {
+    /* border: 1px solid red; */
+    text-align: center;
+    padding-top: 2.5rem;
+}
+@media (max-width: 520px) {
+    #page-content-wrapper .wrapper .form-control {
+        width: 100%;
+    }
+}
+@media (min-width: 520px) {
+    #page-content-wrapper .navbar .nav-item .bell {
+        display: none;
+    }
+}

@@ -1,0 +1,146 @@
+.Next{
+    background: #0CA9E0;
+    color: white;
+    font-size: 20px;
+    padding: 5px 20px 10px 20px;
+    border: 1px solid  #0CA9E0;
+    width: 10000px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.print{
+    color: #088FBF;
+    border: 1px solid #088FBF;
+    width: 100px;
+}
+
+.download {
+   color: white;
+   background: black;
+   border-radius: 10px;
+   outline: none;
+   text-decoration: none;
+   width: 100px;
+   font-weight: bold;
+}
+
+.btn-workout{
+    background-color: #088FBF; 
+    color: white; 
+    width: 100px;
+     border-radius: 10px; 
+     font-weight: bolder;
+     font-size: 18px;
+}
+
+
+  .header-line:after{
+      content:'';
+      display:inline-block;
+      width: 70%;
+   
+      height:100%;
+      margin-right:-90%;
+      border-bottom:1px solid #cccccc;
+      margin-left:12px;
+    }
+
+    .btn-btn{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    
+    .edit-btn,
+    .delete-btn{
+        width: 100px;
+        border-radius: 10px;
+        font: 25px;
+    }
+
+ .edit-btn{
+     font-weight: bold;
+     border: 1px solid #088FBF;
+     
+ }
+
+ .delete-btn{
+    border: none;
+    background: none;
+ }
+
+ .listdiv{
+   
+      /* max-width:30rem; */
+      width: 100%;
+      
+        /* line-height:1.7rem; */
+    
+    }
+    
+    /* .listdiv li{
+
+        margin-right: 200px;
+    } */
+    
+    .inside{
+      display:flex;
+      justify-content:space-around;
+      margin:0.5rem;
+      }
+
+      .approve-deny-check{
+               margin-top: 80px;
+      }
+
+
+      .finish{
+        border-radius: 10px;
+         width: 100px;
+          background:  #088FBF;
+          color: white;
+          border: 1px solid  #088FBF ;
+          margin-left: 10px;
+      }
+
+      .approve{
+          border: 2px solid #C4C4C4;
+      }
+      .sm-box {
+          background-color: rgba(0, 0, 0, 0.1);
+          padding: 12px; 
+          font-size: 14px; 
+      }
+      .sm-box span {
+          float: right;
+          color: rgba(0, 0, 0, 0.1);
+      }
+      .sm-box:hover {
+          color: #ffffff;
+      }
+     .sm-box:hover span {
+        color: #ffffff;
+    }
+    .active span {
+        color: #ffffff;
+    }
+    .active, .sm-box:hover {
+        background-color: black;
+      
+    }
+   .sm-box input {
+        border-radius: 40px;
+    }
+    .fa-edit {
+        margin-right: 3px;
+    }
+    .ard {
+     
+        margin-bottom: 30px;
+    }
+    .hhh {
+        padding-top: 30px;
+        /* padding-bottom: 30px; */
+    }
+  
