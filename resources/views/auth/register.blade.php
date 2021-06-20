@@ -57,20 +57,37 @@
                             <div id="login-row" class="row justify-content-center align-items-center">
                                 <div id="login-column" class="col-md-6">
                                     <div id="login-box" class="col-md-12">
+                                    <div class="results">
+                                    @if(Session::get('success'))
+                                        <div class="alert alert-success">
+                                           {{Session::get('success')}}
+                                        </div>
+                                    @endif    
+
+                                     @if(Session::get('failed'))
+                                        <div class="alert alert-danger">
+                                           {{Session::get('failed')}}
+                                        </div>
+                                    @endif
+                                    
+                                    </div>
                                         <form id="login-form" class="form" action="{{ route('auth.create') }}" method="post">
                                         @csrf
                                             <h6 class=" text-info text-dark">Sign up to <br> The Virtual Fit Admin Portal </h6>
                                             <div class="form-group">
                                                 <label for="username" class="text-info">Name:</label><br>
-                                                <input type="text" name="name" id="username" class="form-control" style="border-radius: 7px;">
+                                                <input type="text" name="name" id="username" class="form-control" style="border-radius: 7px;" value="{{old('name')}}">
+                                                <span class="text-danger">@error('name'){{ $message }} @enderror</span>
                                             </div>
                                             <div class="form-group">
                                                 <label for="email" class="text-info">Email:</label><br>
-                                                <input type="email" name="email" id="username" class="form-control" style="border-radius: 7px;">
+                                                <input type="email" name="email" id="username" class="form-control" style="border-radius: 7px;" value="{{old('email')}}">
+                                                <span class="text-danger">@error('email'){{ $message }} @enderror</span>
                                             </div>
                                             <div class="form-group">
                                                 <label for="password" class="text-info">Password:</label><br>
                                                 <input type="password" name="password" id="password" class="form-control" style="border-radius: 7px;">
+                                                <span class="text-danger">@error('password'){{ $message }} @enderror</span>
                                             </div>
                                             <div class="form-group">
                                                 <label for="remember-me" class="text-info">

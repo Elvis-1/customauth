@@ -57,7 +57,8 @@
                             <div id="login-row" class="row justify-content-center align-items-center">
                                 <div id="login-column" class="col-md-6">
                                     <div id="login-box" class="col-md-12">
-                                        <form id="login-form" class="form" action="index.php" method="post">
+                                        <form id="login-form" class="form" action="{{route('auth.check')}}" method="post">
+                                        @csrf
                                             <h6 class=" text-info text-dark">Sign in to <br> The Virtual Fit Admin Portal </h6>
                                             <div class="form-group">
                                                 <label for="username" class="text-info">Username:</label><br>
