@@ -17,7 +17,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Virtual Fit | Dashboard</title>
+    <title>Custom Auth</title>
 
     <!-- Bootstrap Core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -45,8 +45,10 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="left">
-                        <img src="./Virtual fit admin assets/VIRTUAL FIT dash logo.svg">
-                        <h3>Home fitness <br> app for everyone</h3>
+                    <div style="width:100px">
+                        <img  style="width:100%; border-radius:50px" src="image/el.jpg">
+                    </div>    
+                        <h3><i>IFNOTGOD</i> <br>Custom Auth for everyone</h3>
                    </div>
                 </div>
 
@@ -56,7 +58,7 @@
                         <div class="container">
                             <div id="login-row" class="row justify-content-center align-items-center">
                                 <div id="login-column" class="col-md-6">
-                                    <div id="login-box" class="col-md-12">
+                                    <div id="login-box" class="col-md-12" style="height:auto">
                                     <div class="results">
                                     @if(Session::get('success'))
                                         <div class="alert alert-success">
@@ -71,6 +73,7 @@
                                     @endif
                                     
                                     </div>
+
                                         <form id="login-form" class="form" action="{{ route('auth.create') }}" method="post">
                                         @csrf
                                             <h6 class=" text-info text-dark">Sign up to <br> The Virtual Fit Admin Portal </h6>

@@ -41,7 +41,7 @@ class UserAuthController extends Controller
     }
         
 
-    public function check(Reuest $request){
+    public function check(Request $request){
             //  return $request->input();
             // validate request
 
@@ -50,6 +50,43 @@ class UserAuthController extends Controller
               'password' => 'required|min:5|max:12'
 
             ]);
+
+            // if validates successfully, process login
+
+            $user = User::where('email', '=', $request->email)->first();
+
+            if($user){
+               if(Hash::check($request->password, $user->password)){
+                    // if password match, redirect user to profile
+                    $request->session()->put('LoggedUser', $user->id);
+                    return redirect('profile');
+               }else{
+                     return back()->with('fail', 'invalid password');
+               }
+            }else{
+                return back()->with('fail', 'No account exist for this email');
+            }
+
+            
+    }
+
+    public function profile(){
+
+        if(session()->has('LoggedUser')){
+            $user = User::where('id', '=', session('LoggedUser'))->first();
+
+            $data = [
+                'LoggedUserInfo' => $user 
+            ];
+        }
+        return view('admin.profile', $data);
+    }
+
+    public function logout(){
+        if(session()->has('LoggedUser')){
+            session()->pull('LoggedUser');
+            return redirect('login');
+        }
     }
 
 }

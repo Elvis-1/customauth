@@ -17,7 +17,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Virtual Fit | Dashboard</title>
+    <title>Custom Auth</title>
 
     <!-- Bootstrap Core CSS-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -44,9 +44,11 @@
         <div class="showcase">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="left">
-                        <img src="./Virtual fit admin assets/VIRTUAL FIT dash logo.svg">
-                        <h3>Home fitness <br> app for everyone</h3>
+                    <div class="left" style="width:300px; margin-top:50px">
+                    <div style="width:300px">
+                        <img  style="width:100%; border-radius:50px" src="image/el.jpg">
+                    </div>
+                      <h3><i>IFNOTGOD</i> <br>Custom Auth for everyone</h3>
                    </div>
                 </div>
 
@@ -57,16 +59,27 @@
                             <div id="login-row" class="row justify-content-center align-items-center">
                                 <div id="login-column" class="col-md-6">
                                     <div id="login-box" class="col-md-12">
+
+                                     <div class="results">   
+                                     @if(Session::get('fail'))
+                                        <div class="alert alert-danger">
+                                           {{Session::get('fail')}}
+                                        </div>
+                                    @endif
+                                    
+                                    </div>
                                         <form id="login-form" class="form" action="{{route('auth.check')}}" method="post">
                                         @csrf
                                             <h6 class=" text-info text-dark">Sign in to <br> The Virtual Fit Admin Portal </h6>
                                             <div class="form-group">
-                                                <label for="username" class="text-info">Username:</label><br>
-                                                <input type="text" name="username" id="username" class="form-control" style="border-radius: 7px;">
+                                                <label for="username" class="text-info">Email:</label><br>
+                                                <input type="text" name="email" id="username" class="form-control" style="border-radius: 7px;" value="{{old('name')}}">
+                                                <span class="text-danger">@error('email'){{ $message }} @enderror</span>
                                             </div>
                                             <div class="form-group">
                                                 <label for="password" class="text-info">Password:</label><br>
-                                                <input type="password" name="password" id="password" class="form-control" style="border-radius: 7px;">
+                                                <input type="password" name="password" id="password" class="form-control" style="border-radius: 7px;" " value="{{old('password')}}">
+                                                <span class="text-danger">@error('password'){{ $message }} @enderror</span>
                                             </div>
                                             <div class="form-group">
                                                 <label for="remember-me" class="text-info">
